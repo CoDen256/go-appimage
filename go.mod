@@ -1,6 +1,6 @@
 module github.com/probonopd/go-appimage
 
-go 1.23
+go 1.23.0
 
 require (
 	github.com/CalebQ42/squashfs v1.0.4

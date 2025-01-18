@@ -237,6 +237,14 @@ func writeDesktopFile(ai AppImage) error {
 	if err != nil {
 		log.Printf("Fail to write file: %v", err)
 	}
+
+
+	cmd := []string{"/bin/sh", "-c", "~/Applications/postinstall.sh "+ai.Path}
+	err2 := helpers.RunCmdTransparently(cmd)
+	helpers.LogError("postinstall", err2)
+
+	return err
+
 	return err
 }
 
