@@ -283,4 +283,4 @@ fi
 
 chmod +x $BUILDDIR/../scripts/postinstall.sh
 chmod +x $BUILDDIR/../scripts/run.sh
-mv $BUILDDIR/../scripts/postinstall.sh $HOME/Applications
+mv $BUILDDIR/../scripts/postinstall.sh $HOME/.local/bin

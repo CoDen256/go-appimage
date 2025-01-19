@@ -1,5 +1,5 @@
 #!/bin/bash
 
-mv build/appimaged-*.AppImage ~/Applications
-chmod +x ~/Applications/appimaged-*.AppImage
-~/Applications/appimaged-*.AppImage
+mv build/appimaged-*.AppImage $HOME/.local/bin
+chmod +x $HOME/.local/bin/appimaged-*.AppImage
+$HOME/.local/bin/appimaged-*.AppImage
